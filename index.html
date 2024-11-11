@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>CONTADOR</h1>
+    <section>
+        <p>0</p>
+        <button onclick="diminuir()">menos</button>
+        <button onclick="aumentar()">mais</button>
+    </section>
+    <script>
+        let numero = 0
+        function diminuir(){
+            numero = numero -1
+            MostrarNaTela()
+        }
+        function aumentar(){
+            numero =  numero +1
+            MostrarNaTela()
+        }
+
+        function MostrarNaTela(){
+            const p = document.querySelector ("p")
+            p.innerText = numero
+        }
+       MostrarNaTela()
+    </script>
+    </body>
+</html>
